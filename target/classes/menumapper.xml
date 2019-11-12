@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.oh.sol.menu.MenuMapper">
+	<select id="getMenu" resultType="com.oh.sol.menu.Menu">
+		select * from nov11_menu order by m_name
+	</select>
+</mapper>
