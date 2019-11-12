@@ -28,7 +28,7 @@ public class HomeController {
 	}
 	
 	//produces 는 안써도되긴하는데 안되는 자리도있어서 써야함 받아서 xml로 보낸다 라는 것
-	@RequestMapping(value = "/menu.get", method = RequestMethod.GET, produces = "application/xml; charset=utf-8")
+	@RequestMapping(value = "/menu.get", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
 	public @ResponseBody Menus menuGet() { //Menus 를 응답한단 소리
 		
 		return mDAO.getMenuXML();

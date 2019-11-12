@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 //DB에 있는 데이터 하나를 표현가능
-@XmlRootElement
+//@XmlRootElement   XML할때 씀 각각 setter마다에 넣어줘야함
 public class Menu {
 	private String m_name;
 	private BigDecimal m_price;
@@ -19,7 +19,7 @@ public class Menu {
 		return m_name;
 	}
 	
-	@XmlElement
+	//@XmlElement
 	public void setM_name(String m_name) {
 		this.m_name = m_name;
 	}
@@ -28,7 +28,7 @@ public class Menu {
 		return m_price;
 	}
 	
-	@XmlElement
+	//@XmlElement
 	public void setM_price(BigDecimal m_price) {
 		this.m_price = m_price;
 	}
